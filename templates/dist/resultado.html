@@ -1,0 +1,23 @@
+<!-- templates/resultado.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Datos Recibidos</title>
+    <style>
+        body {font-family: Arial, sans-serif; padding: 20px;}
+        .datos {margin: 20px 0;}
+        .dato-item {margin: 10px 0;}
+    </style>
+</head>
+<body>
+    <h2>Datos Recibidos:</h2>
+    <div class="datos">
+        <div class="dato-item"><strong>Nombre:</strong> {{ datos.nombre }}</div>
+        <div class="dato-item"><strong>Número de Factura:</strong> {{ datos.factura }}</div>
+        <div class="dato-item"><strong>Fecha de Emisión:</strong> {{ datos.fecha }}</div>
+        <div class="dato-item"><strong>Total (Q):</strong> {{ datos.total }}</div>
+        <div class="dato-item"><strong>NIT:</strong> {{ datos.nit }}</div>
+    </div>
+    <a href="/">Volver al formulario</a>
+</body>
+</html>
