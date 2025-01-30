@@ -1,0 +1,12 @@
+flask
+pdfplumber
+
+# Para reconocimiento óptico de caracteres (OCR)
+pytesseract
+
+# Biblioteca OpenCV para procesamiento de imágenes
+opencv-python
+
+# Biblioteca Python para manipulación de imágenes
+pillow
+
