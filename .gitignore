@@ -1,0 +1,58 @@
+# Archivos cache de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+*.pyc
+
+# Ambiente virtual (por si usas venv o virtualenv)
+venv/
+env/
+ENV/
+
+# Archivos temporales de Flask
+instance/
+.webassets-cache
+flask_session/
+
+# Archivos PDF y documentos temporales
+*.pdf
+temp_files/
+uploads/
+processed/
+*.txt
+
+# Archivos cache de pdfplumber
+.pdfplumber/
+
+# IDE y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Archivos de configuración local
+.env
+.env.local
+config.local.py
+
+# Archivos de logs
+*.log
+logs/
+
+# Archivos de dependencias
+node_modules/
+
+# Archivos de distribución
+dist/
+build/
+*.egg-info/
+
+# Archivos de base de datos
+*.db
+*.sqlite3
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db

@@ -1,4 +1,3 @@
-<!-- templates/resultado.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,17 +6,29 @@
         body {font-family: Arial, sans-serif; padding: 20px;}
         .datos {margin: 20px 0;}
         .dato-item {margin: 10px 0;}
+        .pdf-info {background-color: #f0f0f0; padding: 15px; margin: 15px 0;}
     </style>
 </head>
 <body>
     <h2>Datos Recibidos:</h2>
     <div class="datos">
-        <div class="dato-item"><strong>Nombre:</strong> {{ datos.nombre }}</div>
-        <div class="dato-item"><strong>Número de Factura:</strong> {{ datos.factura }}</div>
         <div class="dato-item"><strong>Fecha de Emisión:</strong> {{ datos.fecha }}</div>
+        <div class="dato-item"><strong>Número de DTE:</strong> {{ datos.factura }}</div>
+        <div class="dato-item"><strong>Nombre del Cliente:</strong> {{ datos.nombre }}</div>
         <div class="dato-item"><strong>Total (Q):</strong> {{ datos.total }}</div>
         <div class="dato-item"><strong>NIT:</strong> {{ datos.nit }}</div>
     </div>
+    
+    <div class="pdf-info">
+        <h3>Información del PDF:</h3>
+        {% if datos.pdf %}
+            <p>Archivo cargado: {{ datos.pdf.filename }}</p>
+            <p>Tamaño: {{ datos.pdf.size }} bytes</p>
+        {% else %}
+            <p>No se cargó ningún archivo PDF</p>
+        {% endif %}
+    </div>
+    
     <a href="/">Volver al formulario</a>
 </body>
 </html>
